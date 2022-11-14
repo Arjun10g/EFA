@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- First Div Entry Page -->
+    <div class="name">
+        <div class="cover">
+        <h1>Modern Practices in</h1> <h1>EFA</h1>
+        <h1>By Arjun Ghumman</h1>
+    </div>
+        <div class="shade"></div>
+</div>
+
+<!-- Start Slider -->
+
+<div class="bg"></div>
+
+<div class="cont">
+    <div class="slider">
+        <div class="slide slide1">
+                <div class="img"></div>
+                <h2>Brief Overview of EFA</h2>
+                <div class="out1">
+                    <h3>Latent Variables</h3>
+                    <div class="shape">
+                        <div class="oval">Latent Variable</div>
+                        <div class="square">Manifest Variable</div>
+                    </div>
+                    <h3>Factor Analysis with 1 factor</h3>
+                    <div class="img1">
+                        <img src="img1.jpeg" alt="">
+                    </div>
+                    <h3>Correlation Matrix of Manifest Variables</h3>
+                    <div class="img1">
+                        <img src="img2.jpeg" alt="">
+                    </div>
+                    <h3>Factor Analysis with 1 factor and 4 additional manifest variables</h3>
+                    <div class="img1">
+                        <img src="img3.jpeg" alt="">
+                    </div>
+                    <h3>Correlation Matrix</h3>
+                    <div class="img1">
+                        <img src="img4.jpeg" alt="">
+                    </div>
+                    <h3>Factor Analysis with 2 factors</h3>
+                    <div class="img1">
+                        <img src="img5.jpeg" alt="">
+                    </div>
+                    <h3>The output</h3>
+                    <h3>Raw Correlation Matrix</h3>
+                    <div class="img1">
+                        <img src="img6.jpeg" alt="">
+                        </div>
+                        <h3>Model Implied Correlation Matrix</h3>
+                        <div class="img1">
+                            <img src="img7.jpeg" alt="">
+                        </div>
+                        <h3>Residual Correlation Matrix</h3>
+                        <div class="img1">
+                            <img src="img15.jpeg" alt="">
+                         </div>
+                </div>
+        </div>
+        <div class="slide slide2">
+                <div class="img"></div>
+                <h2>Study Design</h2>
+                <div class="out2">
+                    <h3>Key Questions to ask when determining the Study Design</h3>
+                    <ol>
+                        <li>Which variables to Include?</li>
+                        <li>How many participants are required?</li>
+                        <li>What are the distributional properties of the data?</li>
+                        <li>Is the data appropriate for EFA?</li>
+                    </ol>
+                    <h3>How to choose variables?</h3>
+                    <p class="text">Reasonable content validity and factor overdetermination.</p>
+                    <h3>Sample Size</h3>
+                    <p class="text">A sample size in excess of 400 is typically recommended for EFA with a lower bound of 300. Additional considerations while attempting to design a study include the potential size of the effect.    
+                    </p>
+                    <h3>Distributional Assumptions</h3>
+                    <p class="text">Should examine the bivariate associations between variables, and look for extreme deviations from normality. </p>
+                    <h3>Is the data appropriate for EFA?</h3>
+                    <p class="text">Bartlett’s test of sphercity tests whether a correlation matrix is significantly different from an identity matrix. The Kaiser-Meyer-Olkin (KMO) represents the degree to which each observed variable is predicted by the other variables in the dataset and with this indicates the suitability for factor analysis.</p>
+
+
+                </div>
+        </div>
+        <div class="slide slide3">
+                 <div class="img"></div>
+                <h2>Extraction Method</h2>
+                <div class="out3">
+                    <h3>Various Extraction Methods</h3>
+                    <ol>
+                        <li>The Maximum Likelhood approach finds the communality values that minimize the chi squared goodness of fit test. </li>
+                        <li>Minres and Unweighted Least Square - both attempt to minimize the residuals using the first derivative.</li>
+                        <li>OLS method minimizes the entire residual matrix using an OLS procedure but uses the empirical first derivative. </li>
+                        <li>Weighted Least Square weighs items with low communalities more than those with high communalities. Weighs the residual matrix by 1/diagonal of the inverse of the correlation matrix.</li>
+                        <li>Principal Axis Factoring should be used when other methods fail to converge. This method does not aim to find the best solution but one that converges rapidly.</li>
+                        <li>The generalized least square works similarly to the weighted least square approach. Weighs the residual matrix by the inverse of the correlation matrix.</li>
+                        <li>Minimum Rank factor model extracts factors such that  the residual matrix is positive semi-definite.</li>
+                        <li>Regularized EFA estimates a single regularization parameter &#955; to
+                            avoid improper solutions. The regularization parameter
+                            shrinks the initial estimates of the unique variances, while
+                            the factor loadings are estimated as usual with common ML. </li>
+                    </ol>
+                </div>
+        </div>
+        <div class="slide slide4">
+                <div class="img"></div>
+                <h2>Determining The Optimal Number of Factors</h2>
+                <div class="out4">
+                    <h3>Eigen-Values</h3>
+                    <center><p class="text" style = "font-size: xx-large;">&#923;&#965; = &#955;&#965; </p></center>
+                    <p class="text">&#923; represents the factor loading matrix.</p>
+                    <p class="text">&#965; represents the eigen vector. </p>
+                    <p class="text">&#955; represents the scalar eigen-value.</p>
+                    <h3>Factor Extraction Methods</h3>
+                    <p class="text">Kaiser Gutman Rule specifies that we should retain all factors with eigen values greater than 1. Extremely limiting and should never be used. </p>
+                    <p class="text">Cattell’s scree plot is a graphical method based on the plot of the successive eigenvalues in descending order. Highly subjective and hard to evaluate.</p>
+                    <p class="text">Traditional Parallel Analysis compares empirical eigen-values to random simulated eigen-values from a population with uncorrelated observed variables.</p>
+                    <p class="text">Revised Parallel Analysis compares empirical eigen-values to the eigen-values of a simulated random sample of the correlation matrix.  </p>
+                    <div class="img1">
+                        <img src="img10.jpeg" alt="">
+                     </div>
+                    <p class="text">Comparison Data Approach is an iterative approach that compares the root mean square error of succesive factors using a one-sided Wilcoxon test. Generates data based on the marginal distribution of the observed correlations.</p>
+                    <div class="img1">
+                        <img src="img11.jpeg" alt="">
+                     </div>
+                    <p class="text">Hull Method is another graphical method which compares a chosen selected function (eg. CFI) against the degrees of freedom.</p>
+                    <div class="img1">
+                        <img src="img12.jpeg" alt="">
+                     </div>
+                    <p class="text">Empirical Kaiser Criterion  which is not the same as the kaiser gutman rule, this approach relies on the sampling distribution of the eigen values.</p>
+                    <p class="text">Sequential Model Testing uses a likelhood ratio test to compare competing models. Extremely limited and should be used sparingly. </p>
+                </div>
+        </div>
+        <div class="slide slide5">
+                <div class="img"></div>
+                <h2>Factor Rotation</h2>
+                <div class="out5">
+                    <h3>Orthogonal vs Oblique Rotation</h3>
+                    <div class="img1">
+                        <img src="img17.jpeg" alt="">
+                     </div>
+                </div>
+        </div>
+        <div class="slide slide6">
+            <div class="img"></div>
+            <h2>Questions?</h2>
+        </div>
+            <div class="btn prev"><i class="fa fa-chevron-left"></i></div>
+            <div class="btn next"><i class="fa fa-chevron-right"></i></div>
+    </div>
+</div>
+
+
+</body>
+</html>
